@@ -1,3 +1,10 @@
+@media screen and (max-width: 1111px) {
+  .centered h1{
+    /* color: blue; */
+    font-size: 10px;
+  }
+}
+
 @media screen and (max-width: 1038px) {
   .second_nav {
     flex-direction: column;

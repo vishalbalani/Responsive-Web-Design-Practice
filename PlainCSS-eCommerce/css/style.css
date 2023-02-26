@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Karla&family=Montserrat&family=Rubik:wght@300;700&display=swap");
+
 * {
   margin: 0 5px;
   padding: 0;
   font-family: "Montserrat", sans-serif;
   color: #24242a;
+  /* background-color: #eef9f9; */
 }
 
 .first_nav {
@@ -70,6 +72,17 @@ nav ul li a:hover {
   font-weight: bold;
   box-shadow: 0 -1px 0px inset;
 }
+.banner {
+  position: relative;
+  background-color: none;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 .banner img {
   width: 80vw;
   padding: 12px;
@@ -78,6 +91,12 @@ nav ul li a:hover {
 .banner {
   display: flex;
   justify-content: center;
+}
+.btn-banner {
+  border-style: inset;
+  padding: 1vh 2vw;
+  background-color: #24242a;
+  color: white;
 }
 .grid {
   display: grid;
@@ -88,11 +107,98 @@ nav ul li a:hover {
   margin: 5%;
   flex-wrap: wrap;
 }
-.item {
+.grid .item {
   border: 1px solid #24242a;
   height: 80px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
+}
+
+/* Main Page */
+/* SIde Part */
+
+.main-page {
+  display: flex;
+}
+
+.category-bestsellers {
+  /* border: 1px solid black; */
+  /* height: 500px; */
+  width: 30%;
+}
+
+.category {
+  margin: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
+.bestsellers {
+  margin: 20px;
+  /* border: 1px solid black;/ */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.grid-1 .item {
+  height: 60px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* text-transform: uppercase; */
+}
+
+.item-const-1 {
+  display: flex;
+}
+
+.bestsellers .contan-main img{
+  margin: 0 0px;
+  padding: 0;
+}
+
+/* Main Part */
+
+.shop-main {
+  width: 70%;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.cat-new {
+  /* margin: 10px; */
+  /* border: 1px solid black; */
+}
+.cat-tre {
+  /* margin: 10px; */
+  /* border: 1px solid black; */
+}
+.cat-top {
+  /* margin: 10px; */
+  /* border: 1px solid black; */
+}
+
+.item-main {
+  border: 1px solid #24242a;
+  height: 80px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 10px;
+  overflow: hidden;
+  margin: 20px 0px;
+}
+
+.contan-main p {
+  font-family: "Rubik", sans-serif;
+  padding: 3px;
+  height: 15px;
+  overflow: hidden;
 }
